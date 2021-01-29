@@ -73,13 +73,13 @@ def draw_win_screen(screen):
     screen.blit(text, (SCREEN_SIZE[0]/2-text_size[0]/2, SCREEN_SIZE[1]/2-text_size[1]/2))
 
 while 1:
-    time.sleep(SPEED)
+    time.sleep(0.1)
     for event in pygame.event.get(): 
         if event.type == pygame.QUIT: sys.exit()
 
     keys = pygame.key.get_pressed()
-    croissant.x += (keys[pygame.K_d] - keys[pygame.K_a]) * 5
-    croissant.y += (keys[pygame.K_s] - keys[pygame.K_w]) * 5
+    croissant.x += (keys[pygame.K_d] - keys[pygame.K_a]) * SPEED
+    croissant.y += (keys[pygame.K_s] - keys[pygame.K_w]) * SPEED
 
     croissant_size = croissant.image[collected_croissants].get_rect().size
     if croissant.x < -croissant_size[0]:
