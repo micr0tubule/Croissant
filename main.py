@@ -9,9 +9,9 @@ pygame.init()
 
 SCREEN_SIZE = 800, 800
 NUM_BUTTER = 10
-MAX_SIZE = 50
+MAX_SIZE = 45
 WIN = 100
-SPEED = 0.01
+SPEED = 8
 WIN_TEXT = 'you win!' 
 
 WHITE = (255, 255, 255)
@@ -73,7 +73,7 @@ def draw_win_screen(screen):
     screen.blit(text, (SCREEN_SIZE[0]/2-text_size[0]/2, SCREEN_SIZE[1]/2-text_size[1]/2))
 
 while 1:
-    time.sleep(0.1)
+    time.sleep(0.01)
     for event in pygame.event.get(): 
         if event.type == pygame.QUIT: sys.exit()
 
