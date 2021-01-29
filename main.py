@@ -9,15 +9,17 @@ pygame.init()
 
 SCREEN_SIZE = 800, 800
 NUM_BUTTER = 10
-collected_croissants = 0
 MAX_SIZE = 50
 WIN = 100
 SPEED = 0.01
-objects = []
+WIN_TEXT = 'you win!' 
 
-WIN_TEXT = 'you win!'
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
+
+collected_croissants = 0
+objects = []
+
 class Croissant:
     def __init__(self, x, y, image_file):
         self.y = y
