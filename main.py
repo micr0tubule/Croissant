@@ -48,7 +48,7 @@ class Butter:
     
         
 screen = pygame.display.set_mode(SCREEN_SIZE)
-croissant = Croissant(100, 100, "src\OuiOui.jpg")
+croissant = Croissant(100, 100, "src\OuiOui.png")
 objects.append(croissant)
 for i in range(NUM_BUTTER): 
     pos = random.choice(range(SCREEN_SIZE[0])), random.choice(range(SCREEN_SIZE[1]))
